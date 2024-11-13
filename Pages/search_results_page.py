@@ -1,6 +1,6 @@
 from selenium.webdriver.common.by import By
 
-from pages.base_page import Page
+from base_page import Page
 
 class SearchResultsPage(Page):
     RUSSIAN_TEXT = (By.XPATH,"//h1[@class='h1-menu' and text()='Главное меню']")
