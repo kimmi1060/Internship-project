@@ -5,8 +5,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 from webdriver_manager.firefox import GeckoDriverManager
 from selenium.webdriver.chrome.options import Options
 
-
-from app.application import App
+from app.application import Application
 
 def browser_init(context, scenario_name):
     """
@@ -27,8 +26,8 @@ def browser_init(context, scenario_name):
         options=options,
         service=service
     )
-bs_user = 'davitchkuaseli_KSk4vy'
-bs_key = 'yxxfCf9AtwmzcmQHxxjm'
+bs_user = 'kinjalpatel_OYWK3u'
+bs_key = 'cequyzAGshrun9nyoz9f'
 url = f'http://{bs_user}:{bs_key}@hub-cloud.browserstack.com/wd/hub'
 
 options = Options()
