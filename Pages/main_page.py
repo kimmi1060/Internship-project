@@ -3,7 +3,7 @@ from time import sleep
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.common.by import By
 
-from pages.base_page import Page
+from base_page import Page
 
 class MainPage(Page):
     # EN_ICON = (By.CSS_SELECTOR, "#w-dropdown-toggle-0")
@@ -16,6 +16,8 @@ class MainPage(Page):
 
     def open_main(self):
         self.open('https://soft.reelly.io/')
+        self.open('https://soft.reelly.io/')
+        sleep(3)
 
     def click_main_menu(self):
         sleep(5)
