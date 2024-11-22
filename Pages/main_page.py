@@ -22,6 +22,7 @@ class MainPage(Page):
     def click_main_menu(self):
         sleep(5)
         self.wait_to_be_clickable_click(*self.CLICK_MAIN_MENU)
+        self.wait_to_be_clickable_click(*self.CLICK_MAIN_MENU_MOBILE)
         sleep(3)
 
     def change_language(self):
@@ -32,4 +33,9 @@ class MainPage(Page):
         actions.perform()
         ru_button = self.find_element(*self.RU_ICON)
         actions.move_to_element(ru_button).click().perform()
+
+#FRO MOBILE CONFIG
+        self.wait_to_be_clickable_click(*self.EN_ICON)
+        sleep(3)
+
 
