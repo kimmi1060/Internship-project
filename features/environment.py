@@ -5,8 +5,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 from webdriver_manager.firefox import GeckoDriverManager
 from selenium.webdriver.chrome.options import Options
 
-from app.application import Application
-
+from app import Application
 def browser_init(context, scenario_name):
     """
     :param context: Behave context
@@ -24,7 +23,7 @@ options = Options()
 bstack_options = {
     "os": "Windows",
     "osVersion": "10",
-    'browserName': 'Firefox',
+    'browserName': 'Chrome',
     'sessionName': scenario_name,
 }
 options.set_capability('bstack:options', bstack_options)
